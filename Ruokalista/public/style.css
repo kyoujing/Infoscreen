@@ -1,0 +1,39 @@
+body{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+#banner{
+    background-color: black;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#box{
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    border-radius: 25px;
+    width: 25%;
+    min-width: 300px;
+}
+.nu{
+    border-top: 3px solid black;
+}
+.li{
+    color: black;
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+#title{
+    color: black;
+}
+#sodexo{
+    max-height: 100%;
+    max-width: 100%;
+    width: 300px;
+    padding-bottom: 2%;
+    padding-top: 1%;
+}

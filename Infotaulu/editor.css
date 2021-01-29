@@ -1,0 +1,20 @@
+body {
+	font-family:sans-serif;
+	max-width:750px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:16px;
+}
+ul {
+	list-style-type:none;
+	padding:0;
+}
+li {
+	background-color:#eee;
+	margin:3px;
+	padding:8px;
+	margin-bottom:8px;
+}
+li>h3 {
+	margin-top:0;
+}

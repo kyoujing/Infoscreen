@@ -1,0 +1,120 @@
+html{
+    margin: 0;
+    padding: 0;
+    height:100%;
+    width:100%;
+    min-width: 1620px;
+    min-height: 910px;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: #007ac9;
+    min-width: 75%;
+
+}
+img{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: 250px;
+    height: 100px;
+}
+#container{
+    position: fixed;
+    left: 735px;
+    top: 4.3%;
+    background-color: white;
+    width: 140px;
+    min-width: 140px;
+    border-radius: 5px 5px 5px 5px;
+
+}
+#dateTime{
+    position: relative;
+    align-content: center;
+    padding-left: 5%;
+    color: #007ac9;
+    font-weight:bold;
+    font-size: 2.8em;
+}
+p{
+    color: white;
+    font-size: 23px;
+    font-family: "GothamRounded-Medium", serif
+
+}
+h1{
+    color: white;
+    font-size: 34px;
+    font-family: "GothamRounded-Medium", serif
+}
+@media screen and (max-width: 1920px) {
+    h1 {
+        font-size: 35px ;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    .li {
+        font-size: 27px ;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .li {
+        font-size: 34px ;
+    }
+}
+@font-face {
+    font-family: GothamRounded-Bold;
+    font-style: normal;
+    font-weight: bold;
+    src: url("GothamRounded-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: GothamRounded-Book;
+    font-style: normal;
+    font-weight: bold;
+    src: url("GothamRounded-Book.otf") format("opentype");
+}
+@font-face {
+    font-family: GothamRounded-Medium;
+    font-style: normal;
+    font-weight: bold;
+    src: url("GothamRounded-Medium.otf") format("opentype");
+}
+
+#bussiLista{
+    padding: 2ex;
+    max-height: 45%;
+    border-radius: 25px;
+    overflow: hidden;
+}
+#otsikko{
+    max-height: 100%;
+    max-width: 100%;
+    color: white;
+    border-bottom: solid;
+    display: grid;
+    grid-template-columns: 15% 15% 15% 55%;
+}
+.kotelo{
+    max-height: 100%;
+    max-width: 100%;
+    color: white;
+    margin-bottom: 2px;
+    padding: 2px;
+    border-bottom: solid;
+    display: grid;
+    grid-template-columns: 15% 15% 15% 55%;
+}
+
+.ots,.name,.time,.shortName,.longName{
+    font-weight: bold;
+    color: white;
+    font-family: "GothamRounded-Bold", serif
+}

@@ -1,0 +1,53 @@
+html {
+	height:100%;
+}
+
+body {
+	background-color:#eee;
+	font-family: sans-serif;
+	overflow:hidden;
+	height: 100%;
+}
+#laatikko {
+	background-color:rgba(255,255,255,0.3);
+	box-shadow:0 5px 12px 5px rgba(0,0,0,0.125);
+	padding:15px;
+	padding-bottom:33px;
+	box-sizing: border-box;
+	position:absolute;
+	height:auto;
+	bottom:0;
+	top:0;
+	left:0;
+	right:0;
+}
+@keyframes fadeOut {
+	from {transform:translateX(0);}
+	to {transform:translateX(-125%);}
+}
+@keyframes fadeIn {
+	from {transform:translateX(125%);}
+	to {transform:translateX(0);}
+}
+.fadeOut {
+	animation:fadeOut 0.5s forwards;
+}
+.fadeIn {
+	animation:fadeIn 0.5s forwards;
+}
+#progressbar {
+	background-color:#292;
+	height:3px;
+}
+#barcontainer {
+	position:absolute;
+	bottom:15px;
+	height:3px;
+	left:15px;
+	right:15px;
+}
+
+@keyframes progress {
+	from {width:0%;}
+	to {width:100%;}
+}

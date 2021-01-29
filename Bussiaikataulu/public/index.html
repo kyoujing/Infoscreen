@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HSL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="aikataulu.css">
+</head>
+<body>
+<img src="logo.png" width="298" height="125">
+<div id ="container">
+    <div id="dateTime">
+    </div>
+</div>
+<div id="bussiLista">
+</div>
+
+<script src="aikataulu.js"></script>
+<script>
+    Date.prototype.format = function (fmt) {
+        let o = {
+            "h+": this.getHours(),
+            "m+": this.getMinutes(),
+        };
+        for (let k in o)
+            if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length === 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+        return fmt;
+    };
+    setInterval("document.getElementById('dateTime').innerHTML = (new Date()).format('hh:mm');", 1000);
+
+</script>
+</body>
+</html>
